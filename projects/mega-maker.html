@@ -8,6 +8,30 @@
     <title>Mega Maker | Bryan Lim</title>
 
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .hero-cover-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            image-rendering: pixelated; /* keep the pixel art sharp */
+        }
+
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 
 </head>
 
@@ -35,21 +59,29 @@
          HERO
     ========================= -->
 
-    <header class="hero">
+    <header class="hero hero-container">
 
-        <p class="eyebrow">
-            GAME DESIGN • LEVEL DESIGN • DIGIPEN BILBAO
-        </p>
+        <div class="hero-text">
 
-        <h1>
-            Mega Maker
-        </h1>
+            <p class="eyebrow">
+                GAME DESIGN • LEVEL DESIGN • DIGIPEN BILBAO
+            </p>
 
-        <p class="hero-description">
-            A level design project focused on creating original,
-            playable levels with intentional gameplay cadence,
-            thematic identity, and escalating difficulty.
-        </p>
+            <h1>
+                Mega Maker
+            </h1>
+
+            <p class="hero-description">
+                A level design project focused on creating original,
+                playable levels with intentional gameplay cadence,
+                thematic identity, and escalating difficulty.
+            </p>
+
+        </div>
+
+        <div class="hero-media">
+            <img src="../images/mega-maker-cover.png" alt="Cosmic Cavern level screen from Mega Maker" class="hero-cover-img">
+        </div>
 
     </header>
 
