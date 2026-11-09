@@ -191,6 +191,7 @@ section h2 {
 
 #about,
 #skills,
+#experience,
 #projects,
 #resume,
 #contact {
@@ -276,6 +277,42 @@ section h2 {
 
     .project-link:hover {
         text-decoration: underline;
+    }
+
+/* Experience */
+.experience-item {
+    border: 1px solid #292e36;
+    padding: 30px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .experience-header h3 {
+        font-size: 24px;
+    }
+
+.experience-date {
+    color: #666d77;
+    font-size: 14px;
+}
+
+.experience-company {
+    margin: 8px 0 20px;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+    color: #a7adb7;
+}
+
+    .experience-item li {
+        margin-bottom: 10px;
     }
 
 .contact-links {
@@ -470,8 +507,16 @@ footer {
         padding: 18px 20px;
     }
 
+    /* Keep the links on mobile, wrapped under the logo */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .nav-links {
-        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 18px;
     }
 
     section,

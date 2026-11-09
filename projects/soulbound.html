@@ -29,9 +29,10 @@
 
         /* Compact image styling to fit cards neatly */
         .panel-img {
-            max-width: 240px;
             width: 100%;
-            height: auto;
+            height: 220px;
+            object-fit: contain;
+            background: #0f1217;
             margin: 0 auto 15px auto;
             display: block;
             border-radius: 8px;
@@ -74,6 +75,10 @@
             <p class="hero-description">
                 A 2D platformer puzzle game built on a custom-built C++ game engine. Built as part of team Midnight Munchies for a school project.
             </p>
+        </div>
+
+        <div class="hero-media">
+            <img src="../images/soulbound-cover.jpg" alt="SoulBound title screen" class="hero-cover-img">
         </div>
 
     </header>
@@ -162,6 +167,7 @@
 
             <article class="process-card">
                 <p class="process-number">01</p>
+                <img src="../images/assets-panel.png" alt="ImGui Assets Panel" class="panel-img">
                 <h3>Assets & Directory Panel</h3>
                 <p>
                     Designed the ImGui Assets Panel split into a directory listing (left) and interactive preview style (right). Supports navigating folder structures and dragging/dropping asset files directly from Windows Explorer.
@@ -170,6 +176,7 @@
 
             <article class="process-card">
                 <p class="process-number">02</p>
+                <img src="../images/asset-properties.png" alt="Asset Properties Panel" class="panel-img">
                 <h3>Asset Properties & Prefabs</h3>
                 <p>
                     Double-clicking items displays metadata (Name, Type, Path, Size) and component controls. Allows developers to modify properties, preview JSON data, save changes back as prefabs, or delete assets.
@@ -178,6 +185,7 @@
 
             <article class="process-card">
                 <p class="process-number">03</p>
+                <img src="../images/inspector.png" alt="Object Inspector Panel" class="panel-img">
                 <h3>Inspector & Collisions</h3>
                 <p>
                     Built the object inspector panel for live modification of Transforms, Rigidbodies, Colliders, and Animators. Implemented solid collision detection to prevent entities from clipping or breaking game physics.
