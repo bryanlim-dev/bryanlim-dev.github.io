@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -350,6 +350,77 @@
                     <h3>Full Playthrough</h3>
                     <p>Complete playthrough demonstrating level progression and audio cues.</p>
                 </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Case Study -->
+    <section>
+
+        <p class="section-label">
+            06 — CASE STUDY
+        </p>
+
+        <h2>
+            Building Tools<br>
+            for the Team.
+        </h2>
+
+        <p style="max-width: 750px; font-size: 18px; margin-bottom: 30px;">
+            Why I built editor tools for SoulBound, and what changed for the team once they existed.
+        </p>
+
+        <div class="process-grid">
+
+            <article class="process-card">
+                <p class="process-number">01</p>
+                <h3>Problem</h3>
+                <p>
+                    Our team had to build levels and adjust game objects, but every change meant editing data files by hand, which was slow and easy to get wrong.
+                </p>
+            </article>
+
+            <article class="process-card">
+                <p class="process-number">02</p>
+                <h3>Constraint</h3>
+                <p>
+                    We built our own C++ engine from scratch, so there was no built-in editor like Unity or Unreal. Every tool had to be made ourselves with Dear ImGui, alongside the game itself.
+                </p>
+            </article>
+
+            <article class="process-card">
+                <p class="process-number">03</p>
+                <h3>What I Tested</h3>
+                <p>
+                    The teammates in charge of level design used the tools while building levels, and I watched for bugs and anything that slowed them down.
+                </p>
+            </article>
+
+            <article class="process-card">
+                <p class="process-number">04</p>
+                <h3>What Failed</h3>
+                <p>
+                    The interface was hard to navigate at first, and importing some file formats caused errors.
+                </p>
+            </article>
+
+            <article class="process-card">
+                <p class="process-number">05</p>
+                <h3>What I Changed</h3>
+                <p>
+                    I built an asset browser with drag-and-drop import, prefab tools for editing properties and JSON data, and a live inspector for 4 component types, plus collision detection to stop entities clipping through levels. After testing, I sorted imported files into the correct folders automatically and limited imports to supported file formats.
+                </p>
+            </article>
+
+            <article class="process-card">
+                <p class="process-number">06</p>
+                <h3>What Happened</h3>
+                <p>
+                    6 teammates used the tools, and our level designers could now edit and save levels in the editor without changing the JSON files by hand.
+                </p>
             </article>
 
         </div>
